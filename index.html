@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advice Generator App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+      :root {
+        --Blue-200: hsl(193, 38%, 86%);
+        --Green-300: hsl(150, 100%, 66%);
+
+        --Blue-600: hsl(217, 19%, 38%);
+        --Blue-900: hsl(217, 19%, 24%);
+        --Blue-950: hsl(218, 23%, 16%);
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-[var(--Blue-950)] w-[375px] m-auto font-[Manrope] px-[15px] md:w-[1440px] md:px-[450px]"
+  >
+    <div
+      class="bg-[var(--Blue-900)] rounded-[10px] flex flex-col gap-[35px] items-center px-[15px] py-[40px] mt-[150px] md:mt-[250px] relative h-[355px] md:h-[325px]"
+    >
+      <div class="flex flex-col items-center text-center gap-[25px]">
+        <h3
+          id="advice-id"
+          class="text-[var(--Green-300)] text-[12px] font-semibold tracking-[3px]"
+        >
+          ADVICE #
+        </h3>
+
+        <h1
+          id="advice-text"
+          class="text-[26px] font-extrabold text-[var(--Blue-200)] w-[340px] md:text-[28px] md:w-[449px] md:h-[130px] h-[160px]"
+        >
+          Click the button for an advice
+        </h1>
+      </div>
+
+      <img
+        src="/images/pattern-divider-mobile.svg"
+        alt=""
+        class="mb-[20px] md:hidden"
+      />
+
+      <img
+        src="/images/pattern-divider-desktop.svg"
+        alt=""
+        class="mb-[20px] hidden md:block"
+      />
+
+      <button
+        class="bg-[var(--Green-300)] p-[20px] rounded-[50%] absolute top-78 md:top-71 cursor-pointer hover:-translate-y-1 transition-all duration-300 hover:shadow-[0_0_30px_var(--Green-300),0_8px_30px_var(--Blue-200)]"
+      >
+        <img src="/images/icon-dice.svg" alt="" />
+      </button>
+    </div>
+
+    <!-- ==========================JS=========================== -->
+    <script src="main.js"></script>
+  </body>
+</html>
