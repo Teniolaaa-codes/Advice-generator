@@ -3,7 +3,7 @@ let adviceId = document.querySelector("#advice-id");
 let adviceText = document.querySelector("#advice-text");
 
 btn.addEventListener("click", async () => {
-//   btn.classList.toggle("animate-pulse");
+  // btn.classList.toggle("animate-pulse");
   btn.classList.toggle("rotate-0");
   btn.classList.toggle("rotate-180");
 
